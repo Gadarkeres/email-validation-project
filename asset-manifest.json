@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/email-validation-project/static/css/main.a1b1bd5b.css",
+    "main.js": "/email-validation-project/static/js/main.63d6256d.js",
+    "static/js/787.b0f596bf.chunk.js": "/email-validation-project/static/js/787.b0f596bf.chunk.js",
+    "static/media/illustration-sign-up-mobile.svg": "/email-validation-project/static/media/illustration-sign-up-mobile.3f6f1c6d3e48045cb31a0cae1ae11999.svg",
+    "index.html": "/email-validation-project/index.html",
+    "static/media/icon-success.svg": "/email-validation-project/static/media/icon-success.1ad016255f85fa877dc6bee8c9621535.svg",
+    "main.a1b1bd5b.css.map": "/email-validation-project/static/css/main.a1b1bd5b.css.map",
+    "main.63d6256d.js.map": "/email-validation-project/static/js/main.63d6256d.js.map",
+    "787.b0f596bf.chunk.js.map": "/email-validation-project/static/js/787.b0f596bf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1b1bd5b.css",
+    "static/js/main.63d6256d.js"
+  ]
+}

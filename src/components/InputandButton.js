@@ -8,7 +8,8 @@ const InputandButton = () => {
    const [Email, setEmail] = useState('')
    const [msg, setMsg] = useState(null)
    const [window, setWindow] = useState(null)
-     
+   
+   
 
   return (
     <div>
@@ -25,6 +26,7 @@ const InputandButton = () => {
     <input className='submit' onClick={() =>{
     if (!Email.includes('@')) {
       setMsg(true);
+      
       return false
       
     } else {
@@ -33,7 +35,6 @@ const InputandButton = () => {
      
     }
    
-
     console.log('msg', msg)
     
     }} type="submit" value=" Subscribe to monthly newsletter" />

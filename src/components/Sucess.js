@@ -10,7 +10,7 @@ const Sucess = ({Email, setwindow, setWindow}) => {
       
     <img src={icosucess} alt="sucesso" />
     <h1>Thanks for <br></br>subscribing!</h1>
-    <p> A confirmation email has been sent to <strong>{Email} </strong>
+    <p> A confirmation email has been sent to <strong>{Email}</strong>
   Please open it and click the button inside to confirm your subscription.
 </p> 
 <button onClick={() =>{

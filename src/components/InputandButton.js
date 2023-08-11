@@ -6,40 +6,30 @@ import Sucess from './Sucess'
 
 const InputandButton = () => {
    const [Email, setEmail] = useState('')
-   const [msg, setMsg] = useState(null)
+   const [msg, setMsg] = useState('')
    const [window, setWindow] = useState(null)
+
+  const verifyemail = () => {
+    if (!/^\S+@\S+\.\S+$/.test(Email)) {
+      setMsg("Email inválido!");
+    } else{
+      setWindow(true)
+      setMsg("")
+    }
+  }
    
    
 
   return (
     <div>
-          
-      {msg === true &&(
-            <p id='error'> Email invalido!</p>
-          )}
-         
         <p id='email'>Email Adress:</p>
-       
     <label>
         <input className='text' type="text" placeholder='email@company.com' onChange={(e) => setEmail(e.target.value)} value={Email} />
     </label>
-    <input className='submit' onClick={() =>{
-    if (!Email.includes('@')) {
-      setMsg(true);
-      
-      return false
-      
-    } else {
-      setWindow(true)
-      setMsg(false)
-     
-    }
-   
-    console.log('msg', msg)
-    
-    }} type="submit" value=" Subscribe to monthly newsletter" />
+    <input className='submit' onClick={(verifyemail)} type="submit" value=" Subscribe to monthly newsletter" />
+    {msg &&  <p id='error'>{msg}</p>}
 
- {window === true && <Sucess Email = {Email}  setMsg ={setMsg} setWindow={setWindow}></Sucess>}
+          {window === true && <Sucess Email = {Email}  setMsg ={setMsg} setWindow={setWindow}></Sucess>}
     </div>
   )
 }

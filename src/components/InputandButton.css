@@ -47,6 +47,7 @@ font-size: 0.9em;
     color: red;
     background-color: rgba(255, 0, 0, 0.271);
     margin: 10px 10px;
+    padding: 5px 20px;
 }
 .sucess{
     border: 1px solid rgba(0, 0, 0, 0.512);
